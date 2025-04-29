@@ -45,10 +45,14 @@ def view_student_performance():
     
     conn.close()
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from models.mcq_classifier import classify_and_store_mcqs
+
 # Function to classify MCQs into Bloom Levels
 def classify_bloom_levels():
-    # Placeholder for the logic to classify Bloom levels using your pre-trained model
-    pass
+    classify_and_store_mcqs()
 
 # Function to manage the admin panel interface
 def admin_panel():

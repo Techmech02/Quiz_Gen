@@ -1,0 +1,22 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Databases (regenerated at runtime)
+*.db
+*.sqlite
+*.sqlite3
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment / secrets
+.env
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
